@@ -15,6 +15,8 @@ Social World is an open-source world template designed for creating social space
   - Type **/m** followed by the player ID you wish to mute or unmute.
   - Configure the talk key in settings/keybinding.
 
+
+- **NOTE - THIS IS WORK IN PROGRESS**
 - **Emotes**: An emote wheel featuring a variety of emotes for player expression.
 
 ## Installation

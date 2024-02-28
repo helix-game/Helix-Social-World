@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <title>HELIX - RADIAL MENU</title>
+</head>
+<body>
+    <div class="wrapper hidden">
+        <section class="glow">
+            <main class="container hideelem">
+                <div class="escape">
+                    <button>Esc</button> 
+                    <span class="grey ls mediumbold">BACK</span>
+                </div>
+                <div class="emotes-container">
+                    <section class="emotes-section">
+                        <h2>EMOTES LIST</h2>
+                        <nav class="categories flexsmall">
+                            <p class="category all active">ALL EMOTES</p>
+                            <p class="category dances">DANCE</p>
+                            <p class="category actions">ACTIONS</p>
+                        </nav>
+                        <div class="emotedetail flexlittle">
+                            <div class="emotename">very very long name</div>
+                            <span></span>
+                        </div>
+                        <section class="emotes"></section>
+                    </section>
+
+                    <section class="radial-menu">
+                        <div class="outer">
+                            <section class="inner-outer">
+                                <div class="line line1" id="1">
+                                    <img class="abs abs1" draggable="false" src="images/variant1.svg" alt="">
+                                    <p class="variant variant1">1</p>
+                                </div>
+                                <div class="line line2" id="2">
+                                    <img src="images/variant2.svg" draggable="false" class="abs abs2" alt="">
+                                    <p class="variant variant2">2</p>
+                                </div>
+                                <div class="line line3" id="3">
+                                    <img src="images/variant3.svg" draggable="false" class="abs abs3" alt="">
+                                    <p class="variant variant3">3</p>
+                                </div>
+                                <div class="line line4" id="4">
+                                    <img src="images/variant4.svg" draggable="false" class="abs abs4" alt="">
+                                    <p class="variant variant4">4</p>
+                                </div>
+                                <div class="line line5" id="5">
+                                    <img src="images/variant5.svg" draggable="false" class="abs abs5" alt="">
+                                    <p class="variant variant5">5</p>
+                                </div>
+                                <div class="line line6" id="6">
+                                    <img src="images/variant6.svg" draggable="false" class="abs abs6" alt="">
+                                    <p class="variant variant6">6</p>
+                                </div>
+                                <div class="line line7" id="7">
+                                    <img src="images/variant7.svg" draggable="false" class="abs abs7" alt="">
+                                    <p class="variant variant7">7</p>
+                                </div>
+                                <div class="line line8" id="8">
+                                    <img src="images/variant8.svg" draggable="false" class="abs abs8" alt="">
+                                    <p class="variant variant8">8</p>
+                                </div>
+                                <div class="mid">
+                                  <div class="inner quick-select">
+                                    <h5 class="radialemotename"></h5>
+                                    <p>Drag the emotion to the desired slot </p>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                            <path d="M7 11.3413C7 9.23338 7.64762 7.39127 8.94286 5.81496C10.2381 4.23865 11.8762 3.30033 13.8571 3V11.3413H7Z" fill="#00D9B1"/>
+                                            <path d="M15 27C12.7714 27 10.8808 26.1817 9.328 24.5452C7.77524 22.9087 6.99924 20.9164 7 18.5684V13.7503H23V18.5684C23 20.9172 22.2236 22.9099 20.6709 24.5464C19.1181 26.1829 17.2278 27.0008 15 27ZM16.1429 11.3413V3C18.1238 3.30113 19.7619 4.23945 21.0571 5.81496C22.3524 7.39046 23 9.23257 23 11.3413H16.1429Z" fill="white"/>
+                                          </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                            </section>
+                          </div>
+                    </section>
+
+                    <section class="character">
+                        <div class="imgbox"><img src="images/character.png" alt=""></div>
+                        <div class="playemote hidden">
+                            <div class="flexlittle">
+                                <img src="images/T_emotes1.svg" alt="" id="emoteimg">
+                                <div>
+                                    <h5 id="emotename"></h5>
+                                    <p id="emotetype"></p>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="pointer play" onclick="playEmote()" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                <path d="M12.375 23.925L23.925 16.5L12.375 9.075V23.925ZM16.5 33C14.2175 33 12.0725 32.5666 10.065 31.6998C8.0575 30.8341 6.31125 29.6588 4.82625 28.1737C3.34125 26.6888 2.1659 24.9425 1.3002 22.935C0.4334 20.9275 0 18.7825 0 16.5C0 14.2175 0.4334 12.0725 1.3002 10.065C2.1659 8.0575 3.34125 6.31125 4.82625 4.82625C6.31125 3.34125 8.0575 2.16535 10.065 1.29855C12.0725 0.43285 14.2175 0 16.5 0C18.7825 0 20.9275 0.43285 22.935 1.29855C24.9425 2.16535 26.6888 3.34125 28.1737 4.82625C29.6588 6.31125 30.8341 8.0575 31.6998 10.065C32.5666 12.0725 33 14.2175 33 16.5C33 18.7825 32.5666 20.9275 31.6998 22.935C30.8341 24.9425 29.6588 26.6888 28.1737 28.1737C26.6888 29.6588 24.9425 30.8341 22.935 31.6998C20.9275 32.5666 18.7825 33 16.5 33Z" fill="#1F9982"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="pointer pause hide" onclick="pauseEmote()" width="33" height="33" viewBox="0 0 33 33" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.065 31.6998C12.0725 32.5666 14.2175 33 16.5 33C18.7825 33 20.9275 32.5666 22.935 31.6998C24.9425 30.8341 26.6887 29.6588 28.1737 28.1737C29.6588 26.6887 30.8341 24.9425 31.6998 22.935C32.5666 20.9275 33 18.7825 33 16.5C33 14.2175 32.5666 12.0725 31.6998 10.065C30.8341 8.0575 29.6588 6.31125 28.1737 4.82625C26.6887 3.34125 24.9425 2.16535 22.935 1.29855C20.9275 0.43285 18.7825 0 16.5 0C14.2175 0 12.0725 0.43285 10.065 1.29855C8.0575 2.16535 6.31125 3.34125 4.82625 4.82625C3.34125 6.31125 2.1659 8.0575 1.3002 10.065C0.4334 12.0725 0 14.2175 0 16.5C0 18.7825 0.4334 20.9275 1.3002 22.935C2.1659 24.9425 3.34125 26.6887 4.82625 28.1737C6.31125 29.6588 8.0575 30.8341 10.065 31.6998ZM10 10H14V23H10V10ZM19 10H23V23H19V10Z" fill="#1F9982"/>
+                            </svg>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

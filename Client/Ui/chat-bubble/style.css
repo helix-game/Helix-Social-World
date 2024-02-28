@@ -1,0 +1,25 @@
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.chatbubble {
+    height: fit-content;
+    width: fit-content;
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Outfit', sans-serif; 
+    white-space: normal;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 80px;
+    text-align: start;
+    opacity: 0;
+}
