@@ -16,7 +16,7 @@ Social World is an open-source world template designed for creating social space
   - Configure the talk key in settings/keybinding.
 
 
-- **NOTE - THIS IS WORK IN PROGRESS**
+**NOTE - We're on the process of reworking emotes system UI**
 - **Emotes**: An emote wheel featuring a variety of emotes for player expression.
 
 ## Installation
